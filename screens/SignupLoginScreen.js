@@ -24,7 +24,7 @@ export default class SignupLoginScreen extends React.Component {
             .auth()
             .signInWithEmailAndPassword(emailId, password)
         .then(() => {
-            this.props.navigation.navigate('TabNavigator');
+            this.props.navigation.navigate('Drawer');
         })
         .catch((error) => {
             var errorCode = error.code;
